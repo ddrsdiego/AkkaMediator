@@ -4,6 +4,7 @@ using ConsoleApp.Application.Actors;
 using ConsoleApp.Application.Commands;
 using ConsoleApp.Application.Messages;
 using ConsoleApp.IoC;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -32,7 +33,7 @@ namespace ConsoleApp
             Parallel.ForEach(commands, cmd =>
             {
                 var type = cmd.GetType().AssemblyQualifiedName;
-                var message = Newtonsoft.Json.JsonConvert.SerializeObject(cmd);
+                var message = JsonConvert.SerializeObject(cmd, cmd.GetType(), Formatting.Indented, new JsonSerializerSettings());
 
                 actor.Tell(new MediatRActorMessage(type, message));
             });
@@ -40,7 +41,7 @@ namespace ConsoleApp
             Parallel.ForEach(commands, cmd =>
             {
                 var type = cmd.GetType().AssemblyQualifiedName;
-                var message = Newtonsoft.Json.JsonConvert.SerializeObject(cmd);
+                var message = JsonConvert.SerializeObject(cmd, cmd.GetType(), Formatting.Indented, new JsonSerializerSettings());
 
                 actor.Tell(new MediatRActorMessage(type, message));
             });

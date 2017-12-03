@@ -29,3 +29,4 @@ C:\Users\Diego Dias\Documents\Visual Studio 2017\Projects\ConsoleApp\ConsoleApp.
 C:\Users\Diego Dias\Documents\Visual Studio 2017\Projects\ConsoleApp\ConsoleApp.Application\obj\Debug\ConsoleApp.Application.csproj.CoreCompileInputs.cache
 C:\Users\Diego Dias\Documents\Visual Studio 2017\Projects\ConsoleApp\ConsoleApp.Application\obj\Debug\ConsoleApp.Application.dll
 C:\Users\Diego Dias\Documents\Visual Studio 2017\Projects\ConsoleApp\ConsoleApp.Application\obj\Debug\ConsoleApp.Application.pdb
+C:\Users\Diego Dias\Documents\Visual Studio 2017\Projects\ConsoleApp\ConsoleApp.Application\obj\Debug\ConsoleApp.Application.csprojResolveAssemblyReference.cache

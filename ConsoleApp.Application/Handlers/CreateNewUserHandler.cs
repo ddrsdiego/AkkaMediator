@@ -16,7 +16,11 @@ namespace ConsoleApp.Application.Handlers
         {
             var response = message.Response;
 
+            response.UserId = Guid.NewGuid();
+            response.UserName = message.Name;
+
             Console.WriteLine($"Registrando Usuario {message.Name}");
+
             Thread.Sleep(2000);
 
             return response;
