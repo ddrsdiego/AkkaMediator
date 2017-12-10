@@ -19,7 +19,7 @@ namespace ConsoleApp.Application.Handlers
             response.UserId = Guid.NewGuid();
             response.UserName = message.Name;
 
-            Console.WriteLine($"Registrando Usuario {message.Name}");
+            Console.WriteLine($"Registrando Usuario {message.Name} - {DateTime.Now}");
 
             Thread.Sleep(2000);
 

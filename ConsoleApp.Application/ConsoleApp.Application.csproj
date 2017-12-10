@@ -113,6 +113,8 @@
     <Compile Include="Commands\CreateNewUserCommand.cs" />
     <Compile Include="Common\Response.cs" />
     <Compile Include="Handlers\CreateNewUserHandler.cs" />
+    <Compile Include="Messages\IMediatorConfig.cs" />
+    <Compile Include="Messages\IMediatRActorMessage.cs" />
     <Compile Include="Messages\MediatRActorMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responses\CreateNewUserResponse.cs" />
